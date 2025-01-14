@@ -1,0 +1,148 @@
+$primary-color: #fff708;
+$border-color: #707070;
+$border-color-light: #c7c7c7;
+$text-color: #333333;
+$text-color-light: #999999;
+
+.primary-text {
+	color: $primary-color;
+}
+
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-space-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-align-center {
+	display: flex;
+	align-items: center;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.ensure-btn {
+	background: linear-gradient(to right, #ffc619 0%, #fff708 100%) !important;
+	color: #ffffff;
+	font-size: 30rpx;
+	text-align: center;
+	height: 90rpx;
+	line-height: 90rpx;
+	width: 100%;
+	border-radius: 45rpx;
+	margin: 12rpx 0;
+}
+
+.bottom-layout {
+	height: 100rpx;
+	position: fixed;
+	bottom: 100rpx;
+	left: 0;
+	right: 0;
+	background: #ffffff;
+	z-index: 9;
+	border-top: 1rpx solid #eaeaea;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	.total-layout {
+		display: flex;
+		align-items: center;
+		margin: 12rpx;
+		.total {
+			margin: 0 12rpx;
+			font-size: 40rpx;
+			color: $primary-color;
+		}
+	}
+	.pay-btn {
+		background: linear-gradient(to right, #ffc619 0%, #fff708 100%) !important;
+		color: #ffffff;
+		font-size: 28rpx;
+		text-align: center;
+		width: 180rpx;
+		height: 72rpx;
+		line-height: 72rpx;
+		border-radius: 36rpx;
+		margin: 0 24rpx;
+	}
+	.icon-cart {
+		box-shadow: #eaeaea 0 0 12rpx;
+		width: 50rpx;
+		height: 50rpx;
+		position: absolute;
+		left: 25rpx;
+		top: -30rpx;
+		border: 1rpx solid #eaeaea;
+		border-radius: 50%;
+		padding: 25rpx;
+		background: #ffffff;
+	}
+}
+
+.common-list-item {
+	position: relative;
+	padding: 24rpx 16rpx;
+	display: flex;
+	border-bottom: 1rpx solid $border-color-light;
+	.img {
+		flex-shrink: 0;
+		width: 160rpx;
+		height: 160rpx;
+		border-radius: 12rpx;
+	}
+	.content-layout {
+		margin-left: 12rpx;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		width: 0;
+		.name {
+			font-size: 30rpx;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			-webkit-box-orient: vertical;
+			line-height: 44rpx;
+		}
+		.des {
+			margin-top: 8rpx;
+			font-size: 26rpx;
+			color: $text-color-light;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	.add-layout {
+		position: absolute;
+		z-index: 8;
+		right: 24rpx;
+		bottom: 12rpx;
+		.add-icon {
+			width: 54rpx;
+			height: 54rpx;
+		}
+	}
+	&:last-child {
+		border: none;
+	}
+}

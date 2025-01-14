@@ -1,0 +1,85 @@
+.page-content {
+	.search-layout {
+		position: fixed;
+		width: 100%;
+		z-index: 99;
+		text-align: center;
+		background: $primary-color;
+		display: flex;
+		align-items: center;
+		.input-layout {
+			position: relative;
+			width: 80%;
+			margin: 16rpx 0 16rpx 36rpx;
+			.input {
+				height: 68rpx;
+				line-height: 68rpx;
+				border-radius: 50rpx;
+				background: #ffffff;
+				color: #747474;
+				font-size: 28rpx;
+				text-align: left;
+				padding: 0 36rpx;
+			}
+			image {
+				position: absolute;
+				right: 18rpx;
+				top: 10rpx;
+				padding: 8rpx;
+				width: 36rpx;
+				height: 36rpx;
+			}
+		}
+		text {
+			width: 20%;
+			color: #ffffff;
+			font-size: 32rpx;
+		}
+	}
+	.list-layout {
+		padding: 104rpx 0 120rpx;
+		.list-item {
+			background: #ffffff;
+			margin: 24rpx 24rpx 0;
+			border: none;
+			border-radius: 12rpx;
+		}
+	}
+	.history-layout {
+		background: #ffffff;
+		padding: 128rpx 24rpx 24rpx;
+		.title-layout {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text {
+				font-size: 28rpx;
+				color: #707070;
+			}
+			image {
+				width: 36rpx;
+				height: 36rpx;
+			}
+		}
+		.history-list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 94%;
+			display: flex;
+			flex-flow: wrap;
+			justify-content: flex-start;
+			& > view {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 60rpx;
+				padding: 0 20rpx;
+				margin: 10rpx 20rpx 10rpx 0;
+				height: 60rpx;
+				font-size: 28rpx;
+				background-color: rgb(242, 242, 242);
+				color: #6b6b6b;
+			}
+		}
+	}
+}

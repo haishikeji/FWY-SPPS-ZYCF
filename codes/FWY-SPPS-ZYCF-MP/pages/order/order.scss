@@ -1,0 +1,84 @@
+.page-content{
+	.content-layout{
+		padding: 0 12rpx 24rpx;
+		.item-bg{
+			margin-top: 24rpx;
+			background: #ffffff;
+			border-radius: 12rpx;
+			padding: 16rpx 24rpx;
+		}
+		.tip-layout {
+			padding-bottom: 12rpx;
+			border-bottom: 1rpx solid $border-color-light;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.tip-text{
+				font-weight: bold;
+			}
+			.total-text {
+				font-size: 26rpx;
+				color: $text-color-light;
+			}
+		}
+		.status-layout{
+			.status-text{
+				font-size: 40rpx;
+				font-weight: bold;
+			}
+		}
+		.item-layout-parent{
+			.item-layout{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 16rpx;
+				.left-text{
+					flex-shrink: 0;
+					font-size: 26rpx;
+					color: $text-color-light;
+				}
+				.right-text{
+					margin-left: 24rpx;
+					font-size: 26rpx;
+					font-weight: bold;
+					text-align: right;
+				}
+			}
+		}
+		.detail-layout {
+		}
+		.order-layout{
+			
+		}
+	}
+	
+	.control-layout{
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #FFFFFF;
+		border-top: 1rpx solid #ededed;
+		.temp-input{
+			border: 1rpx solid $border-color-light;
+			margin-right: 24rpx;
+			padding: 12rpx 16rpx;
+			width: 250rpx;
+			border-radius: 12rpx;
+		}
+		.control-btn{
+			background: linear-gradient(to right, #ff720a 0%, #ffc429 100%) !important;
+			color: #ffffff;
+			font-size: 28rpx;
+			text-align: center;
+			width: 400rpx;
+			height: 72rpx;
+			line-height: 72rpx;
+			border-radius: 36rpx;
+			margin: 12rpx 0;
+		}
+	}
+}

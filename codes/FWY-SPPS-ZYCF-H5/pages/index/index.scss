@@ -1,0 +1,99 @@
+.page-content {
+	.top-bg {
+		width: 100%;
+		height: 300rpx;
+		background: $primary-color;
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
+	.search-layout {
+		position: fixed;
+		width: 100%;
+		z-index: 99;
+		text-align: center;
+		background: $primary-color;
+		view {
+			height: 68rpx;
+			line-height: 68rpx;
+			width: 90%;
+			margin: 16rpx 5%;
+			border-radius: 50rpx;
+			background: #ffd631;
+			color: #747474;
+			font-size: 32rpx;
+		}
+	}
+	.content-layout {
+		position: relative;
+		top: 100rpx;
+		z-index: 98;
+		padding-bottom: 120rpx;
+		.swiper-item {
+			display: flex;
+			justify-content: center;
+			.img {
+				border-radius: 12rpx;
+				height: 340rpx;
+				width: 95%;
+			}
+		}
+		.menu-layout {
+			background: #ffffff;
+			margin-top: 12rpx;
+			border-radius: 24rpx;
+			padding: 12rpx 0 24rpx;
+			display: flex;
+			flex-wrap: wrap;
+			.menu-item {
+				margin-top: 12rpx;
+				width: 25%;
+				height: 140rpx;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				image {
+					width: 100rpx;
+					height: 100rpx;
+					border-radius: 50%;
+				}
+				text {
+					font-size: 24rpx;
+				}
+			}
+		}
+		.list-item {
+			margin: 36rpx 24rpx 0;
+			padding: 24rpx 12rpx;
+			background: #ffffff;
+			border-radius: 16rpx;
+			.type-image {
+				width: 100%;
+				height: 220rpx;
+				border-radius: 16rpx;
+			}
+			.scroll-layout {
+				width: 100%;
+				white-space: nowrap;
+				.item {
+					display: inline-block;
+					margin-right: 12rpx;
+					image {
+						border-radius: 8rpx;
+						width: 220rpx;
+						height: 220rpx;
+					}
+					text{
+						font-size: 26rpx;
+						width: 220rpx;
+						text-align: center;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+	}
+}
